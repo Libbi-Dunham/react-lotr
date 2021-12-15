@@ -17,7 +17,7 @@ export default function Books() {
   };
   return (
     <div>
-      <p>Books</p>
+      <h2>Books</h2>
       <BookList books={bookData} />
     </div>
   );

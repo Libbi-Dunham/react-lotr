@@ -13,7 +13,7 @@ export default function Films() {
   }, []);
   return (
     <div>
-      <p>Films</p>
+      <h2>Films</h2>
       <FilmList films={filmData} />
     </div>
   );

@@ -22,7 +22,7 @@ export default function Characters() {
   };
   return (
     <div>
-      <p>Characters</p>
+      <h2>Characters</h2>
       <Controls {...{ search, setSearch, race, setRace, handleClick }} />
       <CharactersList characters={characterData} />
     </div>
