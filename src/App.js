@@ -2,8 +2,8 @@ import './App.css';
 // import { useEffect, useState } from 'react';
 import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
 import Characters from './views/Characters/Characters';
-import Films from './views/Films';
-import Books from './views/Books';
+import Films from './views/Films/Films';
+import Books from './views/Books/Books';
 
 function App() {
   //   const [films, setFilms] = useState([]);
