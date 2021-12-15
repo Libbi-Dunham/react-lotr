@@ -20,8 +20,8 @@ body {
 }
 
 .film {
-  height: 600px;
-  width: 400px;
+  height: 500px;
+  width: 300px;
   background-size: cover;
   margin: 10px;
   display: flex;

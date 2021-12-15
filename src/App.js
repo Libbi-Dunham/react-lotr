@@ -3,6 +3,7 @@ import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
 import Characters from './views/Characters/Characters';
 import Films from './views/Films/Films';
 import Books from './views/Books/Books';
+import Main from './views/Main/Main';
 
 function App() {
   return (
@@ -23,7 +24,9 @@ function App() {
           </NavLink>
         </header>
         <Switch className="links">
-          <Route exact path="/"></Route>
+          <Route exact path="/">
+            <Main />
+          </Route>
           <Route path="/films">
             <Films />
           </Route>
