@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import BookList from '../../components/BookList';
+import { fetchBooks } from '../../services/books';
 
 export default function Books() {
   const [bookData, setbookData] = useState([]);
@@ -7,13 +8,8 @@ export default function Books() {
     getBooks();
   }, []);
   const getBooks = async () => {
-    const response = await fetch('https://the-one-api.dev/v2/book', {
-      headers: {
-        Authorization: `Bearer ${process.env.REACT_APP_API_KEY}`,
-      },
-    });
-    const bookData = await response.json();
-    setbookData(bookData.docs);
+    const response = await fetchBooks();
+    setbookData(response);
   };
   return (
     <div>
