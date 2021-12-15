@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { fetchCharacters } from '../..services/characters';
-import CharactersList from '../..components/Characters/CharactersList';
-import Controls from '../..components/Characters/Controls';
+import { fetchCharacters } from '../../services/characters';
+import CharactersList from '../../components/CharactersList';
+import Controls from './Controls';
 
 export default function Characters() {
   const [characterData, setcharacterData] = useState([]);
